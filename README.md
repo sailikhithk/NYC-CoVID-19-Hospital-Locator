@@ -7,6 +7,7 @@ This web application has the hospitals and its bed counts, vacant beds build ove
 
 
 
+
 # How to use this Web Application 
 * Fork this repository
 * Customize your own application out of my application
