@@ -34,7 +34,7 @@ body {
     position: absolute;
     z-index: 30;
     top: 150px;
-    left: 70px;
+    left: 65px;
     border-radius: 30px;
     opacity: 80%;
     color:white;
@@ -112,7 +112,7 @@ body {
 
 /* TBD */
 .hospital-address span {
-    display:block;  
+    display:block;
 }
 
 .hospital-phone-number {
@@ -187,5 +187,4 @@ body {
 .hospital-container-background:hover {
     background-color: black;
     color: white;
-} 
-
+}
