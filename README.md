@@ -3,6 +3,8 @@ This web application has the hospitals and its bed counts, vacant beds build ove
 
 # Web Application Demo
 
+<a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a>
+
 
 
 
