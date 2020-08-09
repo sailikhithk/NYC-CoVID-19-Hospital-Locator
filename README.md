@@ -2,7 +2,7 @@
 This web application has the hospitals and its bed counts, vacant beds build over Google MAPs API, with HTML, CSS, JavaScript
 
 # Web Application Demo
-[Live Demo](https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/)
+[Live Demo]("https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" )
 
 
 
