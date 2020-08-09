@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CoVID-19 Hospital Locator - New York
+        </title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="js/covid-hospitals-list.js"></script>
+        <script src="js/index.js"></script>
+        <link rel = "icon" href = "https://media.gettyimages.com/illustrations/coronavirus-particle-illustration-illustration-id1205739966?s=2048x2048" 
+        type = "image/x-icon"> 
+        
+        <style>
+            .checked {
+              color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            CoVID-19 Hospitals & Labs in New York
+        </div>
+        <div class="search-container"  >
+            <div class="search">
+                <input id="zip-code-input"  type="text" placeholder="enter pincode in NY e.g.10003 or 10016"></input>
+                <i class="fas fa-search" onclick="searchHospitals()"></i>
+            </div>
+        </div>
+        <div class="hospitals-list-container">
+            <div class="hospitals-list">
+                <!--innerHTML populated by .js-->
+            </div>
+        </div>
+       
+        <div id="map"></div>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV8aox-j9OQlYN_WTuKzQR9ER1nUswpVM&callback=initMap"
+          async defer></script>
+    </body>
+</html>
+
