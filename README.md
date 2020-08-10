@@ -12,11 +12,11 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 * **Empty Beds**
 <img src="./img/empty beds.png" width="600" height="400">
 
-* **Redirection to Google Maps from your location towards hospital you choose
-<img src="./img/empty beds.png" width="400" height="400">
+* **Redirection to Google Maps from your location towards hospital you choose**
+<img src="./img/red.png" width="400" height="400">
 
 ## Grab most of this application using these steps
-<img src="./img/red.png" width="400" height="400">
+
 
 <ol>
   <li>Click On <a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a></li>
