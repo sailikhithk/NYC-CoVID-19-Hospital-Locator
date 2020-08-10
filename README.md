@@ -8,8 +8,9 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 
 <a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a>
 
-**Demo Video**
-<img src="./img/demo.gif" width="600" height="400">
+# **Demo Video**
+
+<img src="./img/demo.gif" width="800" height="640">
 
 # Features of the project
 * **Location**
