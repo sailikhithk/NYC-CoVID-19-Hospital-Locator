@@ -4,6 +4,10 @@ This web application has the hospitals and its bed counts, vacant beds build ove
 # Impact of this project
 In this COVID-19 times, many people who got affected, needs to know which hospital they need to go so that they can choose which hospital is having empty beds. Seeing this, I decided to find a solution using **technology**. Here I am with the project which can help people to track the no.of empty beds time to time.
 
+# Web Application Demo
+
+<a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a>
+
 
 # Features of the project
 * **Location**
@@ -25,14 +29,6 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
   <li>Now go to search bar and search for the zipcodes in NY where you want to check hospitals</li>
   <li>Click on any hospital icons, it shall take you to Google Maps</li>
   </ol>
-
-
-
-
-
-# Web Application Demo
-
-<a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a>
 
 # How to use this Web Application 
 * Fork this repository
