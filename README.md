@@ -13,7 +13,7 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 <img src="./img/empty beds.png" width="600" height="400">
 
 * **Redirection to Google Maps from your location towards hospital you choose**
-<img src="./img/red.png" width="600" height="400">
+<img src="./img/red.png" width="700" height="500">
 
 ## Grab most of this application using these steps
 
