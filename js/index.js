@@ -1,4 +1,3 @@
-
  var map;
  var markers = [];
  var infoWindow;
@@ -110,18 +109,21 @@
      var address;
      var phone;
     hospitals.forEach(function(hospital, index) {
-        address = hospital.addressLines;
+		name=hospital.name;
+        address = hospital.address;
         phone = hospital.phoneNumber;
-        numBed = hospitals.numBeds;
+        numBed = hospital.numBeds;
+		emptyBed=hospital.emptyBeds;
+		zipCode=hospital.zipCode;
         hospitalsList += `
         <div class="hospital-container">
             <div class="hospital-container-background">
                 <div class="hospital-info-container"> 
                     <div class="hospital-address">
-                        <span>${address[0]}</span> 
-                        <span>${address[1]}</span>
-                        <span>${address[2]}</span>
-                    </div>
+                        <span>${name}</span> 
+                        <span>${address}</span>
+                        <span>${zipCode}</span>
+						</div>
                     <div class="hospital-phone-number">Ph: ${phone}</div>
                 </div>
                 <div class="hospital-number-container">
@@ -139,23 +141,22 @@
     var latlng;
     var name;
     var address;
-    var statusText;
     var phoneNumber;
     var numBed;
     var bounds = new google.maps.LatLngBounds();
     hospitals.forEach(function(hospital, index) {
     latlng = new google.maps.LatLng(
-        hospital.coordinates.latitude,
-        hospital.coordinates.longitude);
+        hospital.lat,
+        hospital.lng);
     name = hospital.name;
-    address = hospital.addressLines[0];
-    statusText = hospital.openTime;
+    address = hospital.address;
     phoneNumber = hospital.phoneNumber;
     numBed = hospital.numBeds;
+	emptyBed=hospital.emptyBeds;
     var rating = hospital.rating;
     
-    createMarker(latlng, name, address, statusText, phoneNumber, numBed, index, rating);
-    setMarkerDirections(hospital.coordinates.latitude, hospital.coordinates.longitude, index);
+    createMarker(latlng, name, address, phoneNumber, numBed, emptyBed,index, rating);
+    setMarkerDirections(hospital.lat, hospital.lng, index);
     setMarkerAnimations(markers[index], search)
     bounds.extend(latlng);
    });
@@ -169,14 +170,14 @@ function setMarkerAnimations (marker, search) {
         marker.setAnimation(google.maps.Animation.DROP);
 }
 
-function createMarker(latlng, name, address, statusText, phoneNumber, numBed, index, rating) {
+function createMarker(latlng, name, address, phoneNumber, numBed, emptyBed, index, rating) {
 var html = `
     <div class="hospital-info-window">
         <div class="hospital-info-name">
             ${name} &nbsp ${rating}<span class="fa fa-star checked fa-xs"></span>
         </div>
         <div class="hospital-info-status">
-            ${statusText}
+            Empty Beds: ${emptyBed}
         </div>
         <div id="hospital-address-id" class="hospital-info-address">
             <div class="circle">
@@ -194,7 +195,7 @@ var html = `
             <div class="circle">
                 <i class="fas fa-procedures"></i>
             </div>
-            ${numBed}
+            Total: ${numBed}
         </div>
     </div>
     `
@@ -250,7 +251,7 @@ function searchHospitals() {
     var foundHospitals = [];
     hospitals.forEach(function(hospital){
         var postal = hospital.zipCode.substring(0,5);
-        if (zipCode == hospital.pincode || zipCode == postal) {
+        if (zipCode == hospital.zipCode || zipCode == postal) {
             foundHospitals.push(hospital);
             /* FIXME zoom-out a little bit when results are few, it gets too zoomed */
         } else {
