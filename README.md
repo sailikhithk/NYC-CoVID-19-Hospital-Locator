@@ -6,7 +6,11 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 
 
 # Features of the project
-* 
+* **Location**
+![](./img/location.png)
+
+* **Empty Beds**
+![](./img/empty_beds.png)
 
 
 ## Grab most of this application using these steps
