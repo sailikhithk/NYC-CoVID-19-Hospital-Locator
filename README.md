@@ -10,7 +10,7 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 
 # **Demo Video**
 
-<img src="./img/demo.gif" width="800" height="640">
+<img src="./img/demo.gif" width="1000" height="700">
 
 # Features of the project
 * **Location**
