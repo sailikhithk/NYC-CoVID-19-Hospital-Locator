@@ -7,18 +7,21 @@ In this COVID-19 times, many people who got affected, needs to know which hospit
 
 # Features of the project
 * **Location**
-![](./img/location.png)
+<img src="./img/location.png" width="600" height="400">
 
 * **Empty Beds**
-![](./img/empty_beds.png)
+<img src="./img/empty beds.png" width="600" height="400">
 
+* **Redirection to Google Maps from your location towards hospital you choose
+<img src="./img/empty beds.png" width="400" height="400">
 
 ## Grab most of this application using these steps
+<img src="./img/red.png" width="400" height="400">
 
 <ol>
   <li>Click On <a href="https://sailikhithk.com/NYC-CoVID-19-Hospital-Locator/" target="_blank">Live Demo</a></li>
   <li>It shall ask your location to show you distance between your location and the hospital</li>
-  <li>Now just hover your mouse button on any of the hospital icons</li>
+  <li>Now just hover your mouse button on any of the hospital icons </li>
   <li>Now go to search bar and search for the zipcodes in NY where you want to check hospitals</li>
   <li>Click on any hospital icons, it shall take you to Google Maps</li>
   </ol>
